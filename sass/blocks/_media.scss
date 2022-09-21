@@ -1,1 +1,100 @@
-@media (max-wdith: 1200px)
+@media (max-width: 991px) {
+    .promo  { 
+        padding: 21px 20px 93px 20px;
+        &__header {
+            font-size: 38px;
+        }
+        &__subheader {
+            font-size: 20px;
+        }
+    }
+    .advantage {
+        &__wrapper {
+            width: 100%;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__item {
+            max-width: 300px;
+        }
+
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        justify-content: center;
+        &__official {
+            display: none;
+        }
+    }
+    .promo  {
+        &__wrapper {
+            align-items: center;
+        }
+
+        &__header {
+            
+            font-size: 38px;
+        }
+        &__subheader {
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .promo {        
+        &__header {
+            font-size: 22px;
+            margin-top: 40px;
+        }
+        &__subheader {
+            display: block;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        &__icons {
+            width: 100%;
+            img {
+                width: 50%;
+            }
+        }
+    }
+    .header {
+        flex-direction: column;
+
+        &__contacts {
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 50px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, .3);
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+        }
+        &__phone {
+            font-size: 14px;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        &__logo {
+            margin-top: 70px;
+        }
+
+    .button {
+        width: 135px;
+        font-size: 12px;
+        margin-left: 10px;
+        }
+    }
+
+}
+
